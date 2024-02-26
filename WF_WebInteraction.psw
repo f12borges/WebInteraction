@@ -9,9 +9,9 @@
     <created_user>fernando.borges</created_user>
     <created_date>2024&#x2f;02&#x2f;17 11&#x3a;35&#x3a;39.116</created_date>
     <modified_user>fernando.borges</modified_user>
-    <modified_date>2024&#x2f;02&#x2f;21 16&#x3a;17&#x3a;51.873</modified_date>
-    <fileHash>7362bd16c56c8f49469ce7c213d0c928</fileHash>
-    <stepEntryHash>166606f30c832727166e691794030999</stepEntryHash>
+    <modified_date>2024&#x2f;02&#x2f;26 15&#x3a;12&#x3a;15.143</modified_date>
+    <fileHash>3859021863c39335223a7978cd6b9809</fileHash>
+    <stepEntryHash>3fea16af619ef30734effb0c896ba6fe</stepEntryHash>
 
     <directory>&#x2f;</directory>
     <parameters>
@@ -39,128 +39,128 @@
   </info>
   <order>
     <hop>
-      <from>Start Browser</from>
-      <to>Web Get Value</to>
+      <from>Demo Page</from>
+      <to>Get tituloPagina</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Get Value</from>
-      <to>Web Set Value</to>
+      <from>Get tituloPagina</from>
+      <to>Set tituloPagina</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web DropDown Selection</from>
-      <to>Delay row</to>
+      <from>50&#x25;</from>
+      <to>3</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Set Value</from>
-      <to>Inject JavaScript</to>
-      <enabled>N</enabled>
-      <visible>Y</visible>
-    </hop>
-    <hop>
-      <from>Web Click 3</from>
-      <to>Web DropDown Selection 3</to>
+      <from>SelectDropdown mySelect 3</from>
+      <to>100&#x25;</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Click 1</from>
-      <to>Web DropDown Selection</to>
+      <from>SelectDropdown mySelect</from>
+      <to>50&#x25;</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row</from>
-      <to>Web Click 2</to>
+      <from>3</from>
+      <to>SelectDropdown mySelect 2</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Click 2</from>
-      <to>Web DropDown Selection 2</to>
+      <from>SelectDropdown mySelect 2</from>
+      <to>75&#x25;</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row 3</from>
-      <to>Web Click 1</to>
+      <from>2</from>
+      <to>SelectDropdown mySelect</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Set Value</from>
-      <to>Delay row 3 1</to>
+      <from>Set tituloPagina</from>
+      <to>1</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web DropDown Selection 2</from>
-      <to>Delay row 4</to>
+      <from>75&#x25;</from>
+      <to>4</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row 4</from>
-      <to>Web Click 3</to>
+      <from>4</from>
+      <to>SelectDropdown mySelect 3</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web DropDown Selection 3</from>
-      <to>Delay row 1 1</to>
+      <from>100&#x25;</from>
+      <to>5</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row 1 1</from>
-      <to>Web Click 4</to>
+      <from>5</from>
+      <to>Button Click Me 2</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Click 4</from>
-      <to>Delay row 1</to>
+      <from>Button Click Me 2</from>
+      <to>6</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row 1</from>
-      <to>Web Actions</to>
+      <from>6</from>
+      <to>myDropdown Move To Element</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Actions</from>
-      <to>Delay row 2</to>
+      <from>myDropdown Move To Element</from>
+      <to>7</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row 2</from>
-      <to>Web Actions 2</to>
+      <from>7</from>
+      <to>myDropdown Click dropOption3</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Delay row 3 1</from>
-      <to>Web Click</to>
+      <from>1</from>
+      <to>Button Click Me</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
     <hop>
-      <from>Web Click</from>
-      <to>Delay row 3</to>
+      <from>Button Click Me</from>
+      <to>2</to>
+      <enabled>Y</enabled>
+      <visible>Y</visible>
+    </hop>
+    <hop>
+      <from>myDropdown Click dropOption3</from>
+      <to>Exit Browser</to>
       <enabled>Y</enabled>
       <visible>Y</visible>
     </hop>
   </order>
   <step>
-    <name>Delay row</name>
+    <name>3</name>
     <type>Delay</type>
     <description/>
     <distribute>Y</distribute>
@@ -180,14 +180,41 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>784</xloc>
-      <yloc>128</yloc>
+      <xloc>832</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Delay row 1</name>
+    <name>6</name>
+    <type>Delay</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <timeout>3</timeout>
+    <scaletime>seconds</scaletime>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>992</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>5</name>
     <type>Delay</type>
     <description/>
     <distribute>Y</distribute>
@@ -208,13 +235,13 @@
     </remotesteps>
     <GUI>
       <xloc>1168</xloc>
-      <yloc>224</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Delay row 2</name>
+    <name>7</name>
     <type>Delay</type>
     <description/>
     <distribute>Y</distribute>
@@ -234,15 +261,15 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>976</xloc>
-      <yloc>224</yloc>
+      <xloc>768</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Inject JavaScript</name>
-    <type>InjectJavaScript</type>
+    <name>2</name>
+    <type>Delay</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -251,8 +278,8 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-      <script>&#x2f;&#x2f;Write java script from here&#xd;&#xa;document.querySelector&#x28;&#x22;&#x23;myButton&#x22;&#x29;.click&#x28;&#x29;</script>
-      <driverName>BROWSER1</driverName>
+    <timeout>1</timeout>
+    <scaletime>seconds</scaletime>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -261,14 +288,68 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>336</xloc>
-      <yloc>32</yloc>
+      <xloc>496</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Start Browser</name>
+    <name>1</name>
+    <type>Delay</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <timeout>2</timeout>
+    <scaletime>seconds</scaletime>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>4</name>
+    <type>Delay</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <timeout>2</timeout>
+    <scaletime>seconds</scaletime>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1136</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Demo Page</name>
     <type>BeginStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -301,13 +382,13 @@
     </remotesteps>
     <GUI>
       <xloc>48</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web Actions</name>
+    <name>myDropdown Move To Element</name>
     <type>WebActionsStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -340,14 +421,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1072</xloc>
-      <yloc>224</yloc>
+      <xloc>880</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web Actions 2</name>
+    <name>myDropdown Click dropOption3</name>
     <type>WebActionsStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -380,48 +461,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>880</xloc>
-      <yloc>224</yloc>
+      <xloc>656</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web Click 3</name>
-    <type>ClickStep</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-      <criteria>Id</criteria>
-      <clickoptions>NormalClick</clickoptions>
-      <value>mySelect</value>
-      <multiple>N</multiple>
-      <index>0</index>
-      <driverName>BROWSER1</driverName>
-      <numberOfClicks>2</numberOfClicks>
-    <criteriaAttributes>
-    </criteriaAttributes>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1232</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Web Click 4</name>
+    <name>Button Click Me</name>
     <type>ClickStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -448,14 +495,150 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1264</xloc>
-      <yloc>224</yloc>
+      <xloc>400</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web DropDown Selection</name>
+    <name>SelectDropdown mySelect</name>
+    <type>ClickStep</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+      <criteria>Id</criteria>
+      <clickoptions>NormalClick</clickoptions>
+      <value>mySelect</value>
+      <multiple>N</multiple>
+      <index>0</index>
+      <driverName>BROWSER1</driverName>
+      <numberOfClicks>2</numberOfClicks>
+    <criteriaAttributes>
+    </criteriaAttributes>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>SelectDropdown mySelect 2</name>
+    <type>ClickStep</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+      <criteria>Id</criteria>
+      <clickoptions>NormalClick</clickoptions>
+      <value>mySelect</value>
+      <multiple>N</multiple>
+      <index>0</index>
+      <driverName>BROWSER1</driverName>
+      <numberOfClicks>2</numberOfClicks>
+    <criteriaAttributes>
+    </criteriaAttributes>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>SelectDropdown mySelect 3</name>
+    <type>ClickStep</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+      <criteria>Id</criteria>
+      <clickoptions>NormalClick</clickoptions>
+      <value>mySelect</value>
+      <multiple>N</multiple>
+      <index>0</index>
+      <driverName>BROWSER1</driverName>
+      <numberOfClicks>2</numberOfClicks>
+    <criteriaAttributes>
+    </criteriaAttributes>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Button Click Me 2</name>
+    <type>ClickStep</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+      <criteria>Id</criteria>
+      <clickoptions>NormalClick</clickoptions>
+      <value>myButton</value>
+      <multiple>N</multiple>
+      <index>0</index>
+      <driverName>BROWSER1</driverName>
+      <numberOfClicks>1</numberOfClicks>
+    <criteriaAttributes>
+    </criteriaAttributes>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1088</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>50&#x25;</name>
     <type>DropDownSelectionStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -482,14 +665,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
-      <yloc>128</yloc>
+      <xloc>720</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web DropDown Selection 2</name>
+    <name>75&#x25;</name>
     <type>DropDownSelectionStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -516,14 +699,48 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>992</xloc>
-      <yloc>128</yloc>
+      <xloc>1056</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web Get Value</name>
+    <name>100&#x25;</name>
+    <type>DropDownSelectionStep</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+      <criteria>Id</criteria>
+      <value>mySelect</value>
+      <multiple>N</multiple>
+      <index>0</index>
+      <driverName>BROWSER1</driverName>
+      <selectionCriteria>Value</selectionCriteria>
+      <selectionValue>100&#x25;</selectionValue>
+    <criteriaAttributes>
+    </criteriaAttributes>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Get tituloPagina</name>
     <type>GetTextStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -555,13 +772,13 @@
     </remotesteps>
     <GUI>
       <xloc>144</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web Set Value</name>
+    <name>Set tituloPagina</name>
     <type>SetTextStep</type>
     <description/>
     <distribute>Y</distribute>
@@ -613,14 +830,14 @@
     </remotesteps>
     <GUI>
       <xloc>240</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>Web DropDown Selection 3</name>
-    <type>DropDownSelectionStep</type>
+    <name>Exit Browser</name>
+    <type>EndStep</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -629,15 +846,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-      <criteria>Id</criteria>
-      <value>mySelect</value>
-      <multiple>N</multiple>
-      <index>0</index>
       <driverName>BROWSER1</driverName>
-      <selectionCriteria>Value</selectionCriteria>
-      <selectionValue>100&#x25;</selectionValue>
-    <criteriaAttributes>
-    </criteriaAttributes>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -646,218 +855,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1360</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Web Click 1</name>
-    <type>ClickStep</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-      <criteria>Id</criteria>
-      <clickoptions>NormalClick</clickoptions>
-      <value>mySelect</value>
-      <multiple>N</multiple>
-      <index>0</index>
-      <driverName>BROWSER1</driverName>
-      <numberOfClicks>2</numberOfClicks>
-    <criteriaAttributes>
-    </criteriaAttributes>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>528</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Web Click 2</name>
-    <type>ClickStep</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-      <criteria>Id</criteria>
-      <clickoptions>NormalClick</clickoptions>
-      <value>mySelect</value>
-      <multiple>N</multiple>
-      <index>0</index>
-      <driverName>BROWSER1</driverName>
-      <numberOfClicks>2</numberOfClicks>
-    <criteriaAttributes>
-    </criteriaAttributes>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>864</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Delay row 3</name>
-    <type>Delay</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <timeout>1</timeout>
-    <scaletime>seconds</scaletime>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>432</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Delay row 3 1</name>
-    <type>Delay</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <timeout>2</timeout>
-    <scaletime>seconds</scaletime>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>240</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Delay row 4</name>
-    <type>Delay</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <timeout>2</timeout>
-    <scaletime>seconds</scaletime>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1136</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Delay row 1 1</name>
-    <type>Delay</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <timeout>3</timeout>
-    <scaletime>seconds</scaletime>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1360</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-    </step>
-
-  <step>
-    <name>Web Click</name>
-    <type>ClickStep</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-      <criteria>Id</criteria>
-      <clickoptions>NormalClick</clickoptions>
-      <value>myButton</value>
-      <multiple>N</multiple>
-      <index>0</index>
-      <driverName>BROWSER1</driverName>
-      <numberOfClicks>1</numberOfClicks>
-    <criteriaAttributes>
-    </criteriaAttributes>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
-      <yloc>128</yloc>
+      <xloc>496</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -870,5 +869,71 @@
   <groups>
   </groups>
   <notepads>
+    <notepad>
+      <note>Efeito visual.</note>
+      <xloc>560</xloc>
+      <yloc>128</yloc>
+      <width>76</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+      <shadow_size>5</shadow_size>
+    </notepad>
+    <notepad>
+      <note>Efeito visual.</note>
+      <xloc>912</xloc>
+      <yloc>128</yloc>
+      <width>76</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+      <shadow_size>5</shadow_size>
+    </notepad>
+    <notepad>
+      <note>Efeito visual.</note>
+      <xloc>1184</xloc>
+      <yloc>16</yloc>
+      <width>76</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+      <shadow_size>5</shadow_size>
+    </notepad>
   </notepads>
 </transformation>
